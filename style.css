@@ -1,33 +1,56 @@
-html {
-    box-sizing: 'border-box';
+html,body{
+    height:100%;
+    width:100%;
 }
+
+.overlay {
+    /*background-image: url('MatrixScroll_img.gif');*/
+    background: -webkit-radial-gradient(#ddd, #77aa88);
+    opacity: .85;
+    height:100%;
+    width:100%;
+}
+
+body {
+    background-image: url('MatrixScroll_img.gif');
+    /*background: -webkit-radial-gradient(#ddd, #77aa88);*/
+    /*opacity: .85;*/
+}
+
+/*#app {
+    margin: 0,0,0,0;
+    background-image: url('MatrixScroll_img.gif');
+    background: -webkit-radial-gradient(#ddd, #77aa88);
+    opacity: .85;
+}*/
 
 .center {
     text-align: center;
 }
 
-#parent-input {
+#input-parent {
     width: 160px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5% auto 10px;
+    position: relative;
 }
 
 #player-input {
     border-style: inset;
-    border-radius: 360px;
+    border-radius: 50%;
     font-size: 70px;
-    height: 300px;
-    width: 300px;
+    height: 160px;
+    width: 160px;
 }
 
 #submit {
-    border-radius: 360px;
-    height: 100px;
-    width: 100px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
     background: linear-gradient( green, greenyellow);
     position: relative;
-    right: 70px;
-    top: 70px;
+    display: inline;
+    top: -60px;
+    left: 70px;
 }
 
 ul {
@@ -46,6 +69,12 @@ ul {
     padding: 1px 30px 1px 30px;
 }
 
+button.btn.btn-warning {
+    color: #fff;
+    background-color: #f04e4e;
+    border-color: #eea236;
+}
+
 #footer {
     display: inline-block;
     width: 100%;
@@ -57,6 +86,16 @@ ul {
 
 img {
     display: inline;
-    width: 200px;
+    width: 300px;
     height: 100px;
+}
+
+
+.author {
+    background: -webkit-linear-gradient(#ddd, #0033ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*color: blue;*/
+    font-size: 25px;
+    font-family: Comic Sans MS
 }

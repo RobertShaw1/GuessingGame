@@ -10,24 +10,24 @@
 
   </head>
   <body>
+    <div class="overlay">
+      <div id='app' class="center container">
 
-    <div id='app' class="center container">
-
-        <div id='headers' class="center">
-          <!-- Title and subtitles! -->
-          <h1>Play the Guessing Game!</h1>
-          <h3>Guess a number between 1-100!</h3>
-        </div>
+          <div id='headers' class="center">
+            <!-- Title and subtitles! -->
+            <h1>Play the Guessing Game!</h1>
+            <h3>Guess a number between 1-100!</h3>
+          </div>
 
         <div id='main'>
-            <div id='input-parent'>
-            <!-- Player's guess input, and submit button -->
-                <input id="player-input" class="center" type="number" placeholder="#" maxlength="3" autofocus=autofocus></input>
-                    <button id="submit" class="btn btn-primary">Go!</button>
-            </div>
+          <div id='input-parent'>
+              <!-- Player's guess input, and submit button -->
+              <input id="player-input" class="center" type="number" placeholder="#" maxlength="3" autofocus=autofocus></input>
+              <button id="submit" class="btn btn-primary">Go!</button>
+          </div>
 
-            <div id='guesses'>
-            <!-- unordered list of guesses -->
+              <div id='guesses'>
+                <!-- unordered list of guesses -->
                 <ul id="guess-list" >
                     <li class="guess">-</li>
                     <li class="guess">-</li>
@@ -35,16 +35,16 @@
                     <li class="guess">-</li>
                     <li class="guess">-</li>
                 </ul>
-            </div>
+              </div>
 
             <div id="menu-btns">
-            <!-- reset and hint buttons -->
-                <button class="btn btn-warning">Reset</button>
-                <button class="btn btn-info">Hint</button>
+              <!-- reset and hint buttons -->
+              <button class="btn btn-warning">Reset</button>
+              <button class="btn btn-info">Hint</button>
             </div>
+          </div>
         </div>
     </div>
-
 
 
     <div id='footer' class="center">
@@ -54,7 +54,7 @@
           </div>
 
           <div class="col-md-4">
-            <h4>Project by Robert Shaw</h4>
+            <h4>Project by<span class="author"> Robert Shaw</span></h4>
           </div>
 
           <div class="col-md-4">
