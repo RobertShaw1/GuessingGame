@@ -1,4 +1,4 @@
-html,body{
+html,body,.overlay{
     height:100%;
     width:100%;
 }
@@ -6,9 +6,7 @@ html,body{
 .overlay {
     /*background-image: url('MatrixScroll_img.gif');*/
     background: -webkit-radial-gradient(#ddd, #77aa88);
-    opacity: .85;
-    height:100%;
-    width:100%;
+    opacity: .80;
 }
 
 body {
@@ -20,8 +18,11 @@ body {
 /*#app {
     margin: 0,0,0,0;
     background-image: url('MatrixScroll_img.gif');
-    background: -webkit-radial-gradient(#ddd, #77aa88);
+    background: -webkit-radial-gradient(#ddd, #ddd);
+    background: linear-gradient( whitesmoke, lightslategray);
     opacity: .85;
+    height:100%;
+    width:50%;
 }*/
 
 .center {
@@ -30,7 +31,7 @@ body {
 
 #input-parent {
     width: 160px;
-    margin: 5% auto 10px;
+    margin: 5% auto -40px;
     position: relative;
 }
 
@@ -51,12 +52,18 @@ body {
     display: inline;
     top: -60px;
     left: 70px;
+    opacity: .99;
+}
+
+#message {
+    margin: 10px;
 }
 
 ul {
     display: inline-block;
     list-style: none;
     padding: 0;
+    margin: 10px;
 }
 
 .guess {
