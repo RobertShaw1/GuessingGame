@@ -125,13 +125,7 @@ $(document).ready(function() {
         $('h1').text('Play the Guessing Game!');
         $('h3').text('Guess a number between 1-100!')
         $('.guess').text('-');
-        $('#hint, #submit').prop("disabled", false);
-        $('#player-input').keypress(function(event) {
-            if (event.which == 13) {
-            console.log('in the if')            
-               makeAGuess(game);
-            }
-        })
+        $('#hint, #player-input, #submit').prop("disabled", false);
     })
 });
 
