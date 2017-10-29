@@ -108,16 +108,11 @@ $(document).ready(function() {
         makeAGuess(game);
     })
 
-    $('#player-input').keypress(function(event) {
-        if (event.which == 13) {
-            console.log('in the if')
-           makeAGuess(game);
-        }
-    })
-
     $('#hint').click(e => {
-        console.log(game.provideHint());
-        console.log('winning# = ', game.winningNumber)
+        let hint;
+        if(game.pastGuesses.length < 3) hint = `I'll give you a hint after three guesses ` + String.fromCodePoint(0x1F61C);
+        else hint = `The winning number is one of the following ...[ ${game.provideHint().join(', ')} ]`;
+        $('#message').text(hint)
     })
 
     $('#reset').click(function() {
@@ -126,6 +121,7 @@ $(document).ready(function() {
         $('h3').text('Guess a number between 1-100!')
         $('.guess').text('-');
         $('#hint, #player-input, #submit').prop("disabled", false);
+        $('#message').text('');
     })
 });
 
